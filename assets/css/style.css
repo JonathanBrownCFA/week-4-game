@@ -1,0 +1,38 @@
+body {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+}
+
+.jumbotron {
+    font-size: 29px;
+    text-align: center;
+}
+
+.randomComputer {
+    font-size: 60px;
+}
+
+.panel {
+    position: center;
+    text-align: center;
+    font-size: 29px;
+}
+
+p {
+    text-align: center;
+    font-size: 28px;
+}
+
+input {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.col-md-6 {
+    text-align: left;
+    font-family: fantasy;
+    color: Brown;
+    font-weight: bold;
+    font-size: 44px;
+    text-align: center;
+}
