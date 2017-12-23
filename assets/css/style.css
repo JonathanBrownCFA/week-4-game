@@ -11,19 +11,30 @@ body {
     text-align: center;
 }
 
-.randomComputer {
-    font-size: 60px;
-}
 
 .panel {
     position: center;
     text-align: center;
     font-size: 29px;
 }
+.panel-body {
+    color:rgb(46, 43, 43);
+    font-size: 20px;
+}
 
 p {
     text-align: center;
-    font-size: 28px;
+    font-size: 25px;
+    color:rgb(68, 0, 255);
+    font-weight: bolder
+}
+.p1 {
+    color: brown;
+    font-size: 32px;
+}
+.p2 {
+    color: brown;
+    font-size: 32px;
 }
 
 input {
@@ -35,24 +46,32 @@ input {
 #colWin {
     text-align: left;
     font-family: fantasy;
-    color: Brown;
+    color: rgb(39, 31, 31);
     font-weight: bold;
-    font-size: 44px;
+    font-size: 30px;
     text-align: center;
 }
 #colLost {
     text-align: left;
     font-family: fantasy;
-    color: Brown;
+    color: rgb(39, 31, 31);
     font-weight: bold;
-    font-size: 44px;
+    font-size: 30px;
     text-align: center;
 }
 #randomComputer {
     text-align: left;
     font-family: fantasy;
-    color: Brown;
+    color: rgb(99, 8, 99);
     font-weight: bold;
-    font-size: 44px;
+    font-size: 50px;
+    text-align: center;
+}
+#userGuess {
+    text-align: left;
+    font-family: fantasy;
+    color: rgb(99, 8, 99);
+    font-weight: bold;
+    font-size: 50px;
     text-align: center;
 }
