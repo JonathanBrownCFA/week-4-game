@@ -32,7 +32,23 @@ input {
     width: 150px;
 }
 
-.col-md-6 {
+#colWin {
+    text-align: left;
+    font-family: fantasy;
+    color: Brown;
+    font-weight: bold;
+    font-size: 44px;
+    text-align: center;
+}
+#colLost {
+    text-align: left;
+    font-family: fantasy;
+    color: Brown;
+    font-weight: bold;
+    font-size: 44px;
+    text-align: center;
+}
+#randomComputer {
     text-align: left;
     font-family: fantasy;
     color: Brown;

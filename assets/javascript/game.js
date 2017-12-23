@@ -11,28 +11,28 @@ $(document).ready(function() {
                 console.log('document loaded')
             })
             var randomComputer = Math.floor(Math.random() * 58 + 20)
-
-            var c01crystal = Math.floor(Math.random() * 4 + 9)
+            console.log(randomComputer)
+            var c01crystal = Math.floor(Math.random() * 15 + 2)
             console.log(c01crystal)
 
-            var c02crystal = Math.floor(Math.random() * 4 + 9)
-            console.log(c01crystal)
+            var c02crystal = Math.floor(Math.random() * 12 + 5)
+            console.log(c02crystal)
 
-            var c03crystal = Math.floor(Math.random() * 11 + 4)
+            var c03crystal = Math.floor(Math.random() * 6 + 6)
             console.log(c03crystal)
 
-            var c04crystal = Math.floor(Math.random() * 4 + 8)
+            var c04crystal = Math.floor(Math.random() * 9 + 4)
             console.log(c04crystal)
             $(document).ready(function() {
                 console.log('document loaded')
-
+                $('#randomComputer').html(randomComputer)
                 $('#c01crystal').click(function() {
                     guessTotValue = guessTotValue + c01crystal
                     $('#userGuess').html(guessTotValue)
-                    if (guessTotValue === randomComputer) {
+                    if (guessTotValue == randomComputer) {
                         userWin++
                         alert('You win!')
-                        $('.colWin').html('Won ' + userWin)
+                        $('#colWin').html('Won ' + userWin)
                         guessTotValue = 0
                         $('#userGuess').html(guessTotValue)
                     }
@@ -40,7 +40,7 @@ $(document).ready(function() {
                 if (guessTotValue > randomComputer) {
                     compWin++
                     alert('You Lost!')
-                    $('.colLost').html('Lost ' + compWin)
+                    $('#colLost').html('Lost ' + compWin)
                     guessTotValue = 0
                     $('#userGuess').html(guessTotValue)
                 }
@@ -52,12 +52,12 @@ $(document).ready(function() {
                     console.log('document loaded')
 
                     $('#c02crystal').click(function() {
-                        guessTotValue = guessTotValue + c01crystal
+                        guessTotValue = guessTotValue + c02crystal
                         $('#userGuess').html(guessTotValue)
-                        if (guessTotValue === randomComputer) {
+                        if (guessTotValue == randomComputer) {
                             userWin++
                             alert('You win!')
-                            $('.colWin').html('Won ' + userWin)
+                            $('#colWin').html('Won ' + userWin)
                             guessTotValue = 0
                             $('#userGuess').html(guessTotValue)
                         }
@@ -65,7 +65,7 @@ $(document).ready(function() {
                     if (guessTotValue > randomComputer) {
                         compWin++
                         alert('You Lost!')
-                        $('.colLost').html('Lost ' + compWin)
+                        $('#colLost').html('Lost ' + compWin)
                         guessTotValue = 0
                         $('#userGuess').html(guessTotValue)
                     }
@@ -75,12 +75,12 @@ $(document).ready(function() {
                     console.log('document loaded')
 
                     $('#c03crystal').click(function() {
-                        guessTotValue = guessTotValue + c01crystal
+                        guessTotValue = guessTotValue + c03crystal
                         $('#userGuess').html(guessTotValue)
                         if (guessTotValue == randomComputer) {
                             userWin++
                             alert('You win!')
-                            $('.colWin').html('Won ' + userWin)
+                            $('#colWin').html('Won ' + userWin)
                             guessTotValue = 0
                             $('#userGuess').html(guessTotValue)
                         }
@@ -88,7 +88,7 @@ $(document).ready(function() {
                     if (guessTotValue > randomComputer) {
                         compWin++
                         alert('You Lost!')
-                        $('.colLost').html('Lost ' + compWin)
+                        $('#colLost').html('Lost ' + compWin)
                         guessTotValue = 0
                         $('#userGuess').html(guessTotValue)
                     }
@@ -98,12 +98,12 @@ $(document).ready(function() {
                     console.log('document loaded')
 
                     $('#c04crystal').click(function() {
-                        guessTotValue = guessTotValue + c01crystal
+                        guessTotValue = guessTotValue + c04crystal
                         $('#userGuess').html(guessTotValue)
-                        if (guessTotValue === randomComputer) {
+                        if (guessTotValue == randomComputer) {
                             userWin++
                             alert('You win!')
-                            $('.colWin').html('Won ' + userWin)
+                            $('#colWin').html('Won ' + userWin)
                             guessTotValue = 0
                             $('#userGuess').html(guessTotValue)
                         }
@@ -111,7 +111,7 @@ $(document).ready(function() {
                     if (guessTotValue > randomComputer) {
                         compWin++
                         alert('You Lost!')
-                        $('.colLost').html('Lost ' + compWin)
+                        $('#colLost').html('Lost ' + compWin)
                         guessTotValue = 0
                         $('#userGuess').html(guessTotValue)
                     }
@@ -119,11 +119,13 @@ $(document).ready(function() {
 
                 $(document).ready(function() {
                     console.log('document loaded')
-                    $('.colReset').click(function() {
+                    $('button').click(function() {
                         userWin = 0
                         compWin = 0
-                        $('.colWin').html('Won ' + userWin)
-                        $('.colLose').html('Lost ' + compWin)
+                        userGuess = 0
+                        $('#colWin').html('Won ' + userWin)
+                        $('#colLost').html('Lost ' + compWin)
+                        $('#userGuess').html(+ userGuess)
                     })
                 })
             })
