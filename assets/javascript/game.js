@@ -39,14 +39,7 @@ $(document).ready(function() {
                         userWin++
                         alert('You win!')
                         $('#colWin').html('Won ' + userWin)
-                        guessTotValue = 0
-                        $('#userGuess').html(guessTotValue)
-                        randomComputer = Math.floor(Math.random() * 25 + 31)
-                    $('#randomComputer').html(randomComputer)
-                    c01crystal = Math.floor(Math.random() * 10 + 2)
-                    c02crystal = Math.floor(Math.random() * 3 + 5)
-                    c03crystal = Math.floor(Math.random() * 6 + 6)
-                    c04crystal = Math.floor(Math.random() * 9 + 4)
+                        myFunction();
                         
                     }
                     
@@ -54,14 +47,7 @@ $(document).ready(function() {
                     compWin++
                     alert('You Lost!')
                     $('#colLost').html('Lost ' + compWin)
-                    guessTotValue = 0
-                    $('#userGuess').html(guessTotValue);
-                    randomComputer = Math.floor(Math.random() * 25 + 31)
-                    $('#randomComputer').html(randomComputer)
-                    c01crystal = Math.floor(Math.random() * 10 + 2)
-                    c02crystal = Math.floor(Math.random() * 3 + 5)
-                    c03crystal = Math.floor(Math.random() * 6 + 6)
-                    c04crystal = Math.floor(Math.random() * 9 + 4)
+                    myFunction();
                     
                     
                    
@@ -76,14 +62,7 @@ $(document).ready(function() {
                             userWin++
                             alert('You win!')
                             $('#colWin').html('Won ' + userWin)
-                            guessTotValue = 0
-                            $('#userGuess').html(guessTotValue)
-                            randomComputer = Math.floor(Math.random() * 25 + 31)
-                    $('#randomComputer').html(randomComputer)
-                    c01crystal = Math.floor(Math.random() * 10 + 2)
-                    c02crystal = Math.floor(Math.random() * 3 + 5)
-                    c03crystal = Math.floor(Math.random() * 6 + 6)
-                    c04crystal = Math.floor(Math.random() * 9 + 4)
+                            myFunction();
                        
                 
                 
@@ -92,14 +71,7 @@ $(document).ready(function() {
                         compWin++
                         alert('You Lost!')
                         $('#colLost').html('Lost ' + compWin)
-                        guessTotValue = 0
-                        $('#userGuess').html(guessTotValue)
-                        randomComputer = Math.floor(Math.random() * 25 + 31)
-                        $('#randomComputer').html(randomComputer)
-                        c01crystal = Math.floor(Math.random() * 10 + 2)
-                        c02crystal = Math.floor(Math.random() * 3 + 5)
-                        c03crystal = Math.floor(Math.random() * 6 + 6)
-                        c04crystal = Math.floor(Math.random() * 9 + 4)
+                        myFunction();
                    
                    
                    
@@ -114,14 +86,7 @@ $(document).ready(function() {
                             userWin++
                             alert('You win!')
                             $('#colWin').html('Won ' + userWin)
-                            guessTotValue = 0
-                            $('#userGuess').html(guessTotValue)
-                            randomComputer = Math.floor(Math.random() * 25 + 31)
-                            $('#randomComputer').html(randomComputer)
-                            c01crystal = Math.floor(Math.random() * 10 + 2)
-                    c02crystal = Math.floor(Math.random() * 3 + 5)
-                    c03crystal = Math.floor(Math.random() * 6 + 6)
-                    c04crystal = Math.floor(Math.random() * 9 + 4)
+                            myFunction();
                         
                         
                         
@@ -130,14 +95,7 @@ $(document).ready(function() {
                         compWin++
                         alert('You Lost!')
                         $('#colLost').html('Lost ' + compWin)
-                        guessTotValue = 0
-                        $('#userGuess').html(guessTotValue)
-                        randomComputer = Math.floor(Math.random() * 25 + 31)
-                        $('#randomComputer').html(randomComputer)
-                        c01crystal = Math.floor(Math.random() * 10 + 2)
-                    c02crystal = Math.floor(Math.random() * 3 + 5)
-                    c03crystal = Math.floor(Math.random() * 6 + 6)
-                    c04crystal = Math.floor(Math.random() * 9 + 4)
+                        myFunction();
                     
                     
                     }
@@ -150,14 +108,7 @@ $(document).ready(function() {
                             userWin++
                             alert('You win!')
                             $('#colWin').html('Won ' + userWin)
-                            guessTotValue = 0
-                            $('#userGuess').html(guessTotValue)
-                            randomComputer = Math.floor(Math.random() * 25 + 31)
-                            $('#randomComputer').html(randomComputer)
-                            c01crystal = Math.floor(Math.random() * 10 + 2)
-                            c02crystal = Math.floor(Math.random() * 3 + 5)
-                            c03crystal = Math.floor(Math.random() * 6 + 6)
-                            c04crystal = Math.floor(Math.random() * 9 + 4)
+                            myFunction();
 
 
                         }
@@ -165,14 +116,7 @@ $(document).ready(function() {
                         compWin++
                         alert('You Lost!')
                         $('#colLost').html('Lost ' + compWin)
-                        guessTotValue = 0
-                        $('#userGuess').html(guessTotValue)
-                        randomComputer = Math.floor(Math.random() * 25 + 31)
-                        $('#randomComputer').html(randomComputer)
-                        c01crystal = Math.floor(Math.random() * 10 + 2)
-                        c02crystal = Math.floor(Math.random() * 3 + 5)
-                        c03crystal = Math.floor(Math.random() * 6 + 6)
-                        c04crystal = Math.floor(Math.random() * 9 + 4)
+                        myFunction();
                     }
                 })
              
@@ -184,7 +128,21 @@ $(document).ready(function() {
                         $('#colLost').html('Lost ' + compWin)
                         $('#userGuess').html(+ userGuess)
                         location.reload();
-                    })              
+                    }) 
+                    function myFunction() {
+                        guessTotValue = 0
+                        $('#userGuess').html(guessTotValue)
+                        randomComputer = Math.floor(Math.random() * 25 + 31)
+                        $('#randomComputer').html(randomComputer)
+                        c01crystal = Math.floor(Math.random() * 10 + 2)
+                        c02crystal = Math.floor(Math.random() * 3 + 5)
+                        c03crystal = Math.floor(Math.random() * 6 + 6)
+                        c04crystal = Math.floor(Math.random() * 9 + 4);
+                    }
+
+
                    })
     }) 
 })
+
+
